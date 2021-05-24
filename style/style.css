@@ -1,0 +1,165 @@
+:root{
+    --border-radius:20px
+}
+
+
+.attribution { 
+    font-size: 11px;
+    position: relative;
+    top:250px;
+    background-color: hsl(185, 75%, 39%);
+    text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    margin: 0;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    z-index: 0;
+    background-color: hsl(185, 75%, 39%);
+}
+
+span,p{
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+.numberH2{
+    margin-bottom: 5px;
+}
+
+.numberP{
+    padding-bottom: 15px;
+}
+
+p{
+    margin-top: 0;
+}
+.wrapper{
+    display: flex;
+    
+    height: 100vh;
+    
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.container{
+    height: 380px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    z-index:1 ;
+}
+
+.profile{
+    flex: 2;
+    width:100%;
+    background-color: white;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+.cover{
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.profilePicture{
+    position: relative;
+    bottom: 50px;
+    border-radius: 100%;
+    border: 5px solid #fff;
+}
+.topPart{
+    text-align: center;
+}
+
+.text{
+    position: relative;
+    bottom: 60px;
+}
+
+hr{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px;
+    border-width: 3px 0 0 0;
+    border-style: solid;
+    color: hsl(0, 0%, 59%);
+    position: relative;
+    bottom: 15px;
+}
+
+
+.text>p{
+    padding-left: 15px;
+}
+.numbers{
+    flex: 0.75;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    width:100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+.fallowers{
+    margin-left: 15px;
+}
+.photoes{
+    margin-right: 15px;
+}
+
+.patternTop{
+    position: absolute;
+    top: -360px;
+    left: 0px;
+    height: 1000px;
+    width: 1000px;
+    transform: rotate(50deg);
+}
+.patternBottom{
+    position: fixed; /* pentru a nu prelungi body si a nu crea scroll bar */
+    bottom: -450px;
+    right: 0px;
+    height: 1000px;
+    width: 1000px;
+    z-index: 0;
+
+}
+
+@media (max-width:850px) {
+    
+    .attribution{
+        top:200px;
+    }
+    .patternTop{
+    
+        height: 0;
+        width: 0;
+
+    }
+    .patternBottom{
+     
+        height: 0;
+        width: 0;
+
+    
+    }
+    .wrapper{
+        height: 600px;
+    }
+}
